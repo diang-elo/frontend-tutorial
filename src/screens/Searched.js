@@ -33,6 +33,9 @@ function Searched() {
           <div  key={item.idMeal}>
           <h1>{item.strMeal}</h1>
           <img src={item.strMealThumb}></img>
+          <h1>{item.strCategory}</h1>
+          <h1>{item.strArea}</h1>
+          <a target="_blank" href={item.strSource}>Recipe</a>
           
           </div>
         );
