@@ -18,7 +18,7 @@ function Landing() {
 
         <div class='centered'>
         <form>
-            <input class='search-input' type='search' placeholder='Search Recipe' onChange={(event) => {setRecipe(event.target.value)}}></input>
+            <input class='search-input' type='search' placeholder='Fina a Recipe' onChange={(event) => {setRecipe(event.target.value)}}></input>
             <button class="submit-btn" type='submit' onClick={submitForm}>Search</button>
         </form>
         </div>

@@ -12,6 +12,8 @@
   font-family: 'Albert Sans', sans-serif;
   color: #10182f;
   box-sizing: border-box;
+  /* background-image: url(''); */
+  background-color: 	#E0E0E0;
 }
 
 .searched-container{
@@ -46,7 +48,30 @@
 
 .card-body p {
   font-size: 13px;
-  margin: 0 0 40px;
+  margin: 0 0 15px;
+  
+}
+.card-body a {
+  padding-top: 10px;
+}
+
+/* .tag-container{
+  
+  
+ 
+} */
+
+.tag{
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 10;
+  color: #fff;
+  padding: 6px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+
 }
 
 /* LANDING PAGE */

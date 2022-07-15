@@ -35,14 +35,18 @@ function Searched() {
           return (
             <div class='card' key={item.idMeal}>
               <div class='card-header'>
-              <img src={item.strMealThumb}></img>
+              <img src={item.strMealThumb} alt=""></img>
               </div>
 
               <div class='card-body'>
               <h1>{item.strMeal}</h1>
-              <p>{item.strCategory} </p>
-              <p>{item.strArea}</p>
-              <a target="_blank" href={item.strSource}>Recipe</a>
+              <p> Meal Category: {item.strCategory} </p>
+              <p>Meal Area: {item.strArea}</p>
+              <p>Meal Tags: {item.strTags}</p>
+              <div class='tag-container'>
+              <a class='tag'target="_blank" rel="noreferrer" href={item.strSource}>Recipe</a>
+              <a class='tag'target="_blank" rel="noreferrer" href={item.strYoutube}>Video</a>
+              </div>
               </div>
 
               
