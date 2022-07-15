@@ -1,7 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
 
 /* SEARCHED PAGE */
+
+.search-header{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  font-size: 30px;
+}
+
+.return-button{
+  background-color: rgb(214, 36, 36);
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  position: fixed;
+  top:1;
+  left: 0;
+}
+.return-button:hover{
+  border:1px solid black;
+  
+}
 
 .searched-body{
   display: flex;
@@ -93,6 +123,12 @@
   transform: translate(-50%, -50%);
  
  
+}
+
+.landing-title{
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  text-align: center;
+  font-size: 60px;
 }
 
 .search-input{

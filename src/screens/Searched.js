@@ -2,12 +2,13 @@ import React from 'react'
 import axios from 'axios';
 import '../App.css';
 import { useEffect, useState } from "react";
-import { useParams } from 'react-router-dom';
+import { useParams,useNavigate } from 'react-router-dom';
 
 function Searched() {
 
   const [searchedRecipe, setSearchedRecipe] = useState([]);
   let params = useParams();
+  const navigate = useNavigate();
 
   const getSearch = (e) => {
 
@@ -27,8 +28,11 @@ function Searched() {
   }, [params.term])
 
   return (
-    <div class='searched-body'>
-
+    <div class=''>
+      <header class="search-header">{params.term}
+      <button onClick={() => navigate(-1)} className='return-button'>Back </button>
+      </header>
+      <div class='searched-body'>
       <div class='searched-container'>
 
         {searchedRecipe.map((item) => {
@@ -56,7 +60,7 @@ function Searched() {
         })}
 
       </div>
-
+      </div>
     </div>
 
 
