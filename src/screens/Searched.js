@@ -27,32 +27,31 @@ function Searched() {
   }, [params.term])
 
   return (
-    <div>
-       {searchedRecipe.map((item) => {
-        return (
-          <div  key={item.idMeal}>
-          <h1>{item.strMeal}</h1>
-          <img src={item.strMealThumb}></img>
-          <h1>{item.strCategory}</h1>
-          <h1>{item.strArea}</h1>
-          <a target="_blank" href={item.strSource}>Recipe</a>
-          
-          </div>
-        );
-      })}
-     
+    <div class='searched-body'>
 
-{/* {item.urls.map((url) => {
-              return (
-                <div>
-                  <h1>{url.strMeal}</h1>
-                  <img src={url.strMealThumb}></img>
-                </div>
-              );
-            })}
-          </div>
-        );
-      })} */}
+      <div class='searched-container'>
+
+        {searchedRecipe.map((item) => {
+          return (
+            <div class='card' key={item.idMeal}>
+              <div class='card-header'>
+              <img src={item.strMealThumb}></img>
+              </div>
+
+              <div class='card-body'>
+              <h1>{item.strMeal}</h1>
+              <p>{item.strCategory} </p>
+              <p>{item.strArea}</p>
+              <a target="_blank" href={item.strSource}>Recipe</a>
+              </div>
+
+              
+
+            </div>
+          );
+        })}
+
+      </div>
 
     </div>
 
