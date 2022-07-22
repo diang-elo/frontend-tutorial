@@ -180,6 +180,12 @@ input:hover,input:focus{
   display: none;
 }
 
+.simple-p1{
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  text-align: center;
+  font-size: 26px;
+}
+
 
 /* clears the ‘X’ from Chrome */
 input[type="search"]::-webkit-search-decoration,
