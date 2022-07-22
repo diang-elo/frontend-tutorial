@@ -15,7 +15,7 @@ function App() {
      <Routes>
       <Route path="/" element={<Landing/>}/> 
       <Route path="/recipe/:term" element={<Searched/>}/>
-      <Route path="*" element={<NotFound/>}/>
+      <Route path="/404" element={<NotFound/>}/>
       </Routes>
     </div>
     </Router>
